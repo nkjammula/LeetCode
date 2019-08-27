@@ -1,0 +1,11 @@
+C:\Users\NJ050685\Documents\MyPetProjects\LeetCode\LeetCode\bin\Debug\netcoreapp2.2\LeetCode.deps.json
+C:\Users\NJ050685\Documents\MyPetProjects\LeetCode\LeetCode\bin\Debug\netcoreapp2.2\LeetCode.runtimeconfig.json
+C:\Users\NJ050685\Documents\MyPetProjects\LeetCode\LeetCode\bin\Debug\netcoreapp2.2\LeetCode.runtimeconfig.dev.json
+C:\Users\NJ050685\Documents\MyPetProjects\LeetCode\LeetCode\bin\Debug\netcoreapp2.2\LeetCode.dll
+C:\Users\NJ050685\Documents\MyPetProjects\LeetCode\LeetCode\bin\Debug\netcoreapp2.2\LeetCode.pdb
+C:\Users\NJ050685\Documents\MyPetProjects\LeetCode\LeetCode\obj\Debug\netcoreapp2.2\LeetCode.csprojAssemblyReference.cache
+C:\Users\NJ050685\Documents\MyPetProjects\LeetCode\LeetCode\obj\Debug\netcoreapp2.2\LeetCode.csproj.CoreCompileInputs.cache
+C:\Users\NJ050685\Documents\MyPetProjects\LeetCode\LeetCode\obj\Debug\netcoreapp2.2\LeetCode.AssemblyInfoInputs.cache
+C:\Users\NJ050685\Documents\MyPetProjects\LeetCode\LeetCode\obj\Debug\netcoreapp2.2\LeetCode.AssemblyInfo.cs
+C:\Users\NJ050685\Documents\MyPetProjects\LeetCode\LeetCode\obj\Debug\netcoreapp2.2\LeetCode.dll
+C:\Users\NJ050685\Documents\MyPetProjects\LeetCode\LeetCode\obj\Debug\netcoreapp2.2\LeetCode.pdb

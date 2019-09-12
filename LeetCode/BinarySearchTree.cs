@@ -449,5 +449,43 @@ namespace LeetCode
             }
             return false;
         }
+
+
+        public int LengthOfLongestSubstring(string s)
+        {
+            int n = s.Length;
+            int result = 0;
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = i + 1; j <= n; j++)
+                {
+                    if (isSubStringUnique(s, i, j))
+                    {
+                        result = Math.Max(result, j - i);
+                    }
+                }
+            }
+            return result;
+        }
+
+        public bool isSubStringUnique(string s, int start, int end)
+        {
+            HashSet<char> HT = new HashSet<char>();
+            for (int i = start; i < end; i++)
+            {
+                if (!HT.Contains(s[i]))
+                {
+                    HT.Add(s[i]);
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+       
+
     }
 }

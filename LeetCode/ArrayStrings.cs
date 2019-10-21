@@ -121,64 +121,65 @@ namespace LeetCode
         }
 
 
-        //public static void Main()
-        //{
-        //    // var result = ArrayStrings.MyAtoi("2147483657");
-        //    // var result = ArrayStrings.LengthOfLongestSubstring("abcabcbb");
-        //    //var ts = new TwoSum();
-        //    //ts.Add(0);
-        //    //ts.Add(-1);
-        //    //ts.Add(-1);
-        //    //ts.Add(0);
-        //    //ArrayStrings.PlusOne(new int[] { 8, 9 });
-        //    //ArrayStrings.solution(new int[] { 1,1,2,3,3 }, 3);
+        public static void Main()
+        {
+           // var result = ArrayStrings.MyAtoi("2147483657");
+           // var result = ArrayStrings.LengthOfLongestSubstring("abcabcbb");
+           //var ts = new TwoSum();
+           //ts.Add(0);
+           //ts.Add(-1);
+           //ts.Add(-1);
+           //ts.Add(0);
+           //ArrayStrings.PlusOne(new int[] { 8, 9 });
+           //ArrayStrings.solution(new int[] { 1,1,2,3,3 }, 3);
 
-        //    //Console.WriteLine(ArrayStrings.solution(new int[] { 1, 1, 2, 3, 3 }, 4));
-        //    //Console.WriteLine(TwoSum.ReturnAvgOfWindowSize(new int[] { 2,4,6,8}, 4));
-        //    //Console.WriteLine(TwoSum.addBinary("11","1"));
-        //    //Console.WriteLine(TwoSum.addBinary("11","1"));
-        //    //bool IsPrime = true;
-        //    //Console.WriteLine("Prime numbers :");
-        //    //for (int i = 2; i <= 100; i++)
-        //    //{
-        //    //    for (int j = 2; j < 100; j++)
-        //    //    {
-        //    //        if (i != j && i % j == 0)
-        //    //        {
-        //    //            IsPrime = false;
-        //    //            break;
-        //    //        }
-        //    //    }
-        //    //    if (IsPrime)
-        //    //    {
-        //    //        Console.Write("\t" + i);
+           //Console.WriteLine(ArrayStrings.solution(new int[] { 1, 1, 2, 3, 3 }, 4));
+           //Console.WriteLine(TwoSum.ReturnAvgOfWindowSize(new int[] { 2,4,6,8}, 4));
+           //Console.WriteLine(TwoSum.addBinary("11","1"));
+           //Console.WriteLine(TwoSum.addBinary("11","1"));
+           //bool IsPrime = true;
+           //Console.WriteLine("Prime numbers :");
+           //for (int i = 2; i <= 100; i++)
+           //{
+           //    for (int j = 2; j < 100; j++)
+           //    {
+           //        if (i != j && i % j == 0)
+           //        {
+           //            IsPrime = false;
+           //            break;
+           //        }
+           //    }
+           //    if (IsPrime)
+           //    {
+           //        Console.Write("\t" + i);
 
-        //    //    }
-        //    //    IsPrime = true;
-        //    //}
-        //    //Console.ReadKey();
+           //    }
+           //    IsPrime = true;
+           //}
+           //Console.ReadKey();
 
-        //    //Console.WriteLine(TwoSum.StrStr("mississippi","issipi"));
-        //    //TwoSum.ReverseString(new char[] { 'H', 'a', 'n', 'n', 'a', 'h' });
-        //    // TwoSum.MinSubArrayLen( 7, new int[] {2,3,1,2,4,3 });
-        //    // TwoSum.reverseArray(new int[] { 1, 2, 3, 4, 5 });
-        //    //TwoSum.ReverseArrByNothalfLength(new int[] { 1, 2, 3, 4, 5 });
-        //    //TwoSum.ReverseWordsInString();
-        //    //TwoSum.RemoveDuplicates(new int[] { 1,2,3,4,4,5});
-        //    TwoSum ts = new TwoSum();
-        //    //ts.numIslands(new char[][] { new char[] {'1','1','1','1','0' },
-        //    //                new char[] { '1', '1', '0', '1', '0' },
-        //    // new char[] {'1','1','0','0','0' },
-        //    // new char[] {'0','0','0','0','0' }});
-        //    //ts.NumSquares(12);
-        //    //ts.returnSetNumbers(new int[] { 2,4,6,10}, 16);
-        //    //ts.returnSetNumbers(new int[] { 11,10,4,2,6}, 16);
-        //    //ts.returnSetNumbers(new int[] {1,2,3,4,5}, 8);
-        //    ts.returnSetNumbers(new int[] {1,2,3,4,5,6,7,8,9,10,0}, 10);
-        //    Console.WriteLine();
-        //    Console.ReadLine();
+           //Console.WriteLine(TwoSum.StrStr("mississippi","issipi"));
+           //TwoSum.ReverseString(new char[] { 'H', 'a', 'n', 'n', 'a', 'h' });
+           // TwoSum.MinSubArrayLen( 7, new int[] {2,3,1,2,4,3 });
+           // TwoSum.reverseArray(new int[] { 1, 2, 3, 4, 5 });
+           //TwoSum.ReverseArrByNothalfLength(new int[] { 1, 2, 3, 4, 5 });
+           //TwoSum.ReverseWordsInString();
+           //TwoSum.RemoveDuplicates(new int[] { 1,2,3,4,4,5});
+           TwoSum ts = new TwoSum();
+           //ts.numIslands(new char[][] { new char[] {'1','1','1','1','0' },
+           //                new char[] { '1', '1', '0', '1', '0' },
+           // new char[] {'1','1','0','0','0' },
+           // new char[] {'0','0','0','0','0' }});
+           //ts.NumSquares(12);
+           //ts.returnSetNumbers(new int[] { 2,4,6,10}, 16);
+           //ts.returnSetNumbers(new int[] { 11,10,4,2,6}, 16);
+           //ts.returnSetNumbers(new int[] {1,2,3,4,5}, 8);
+          // ts.returnSetNumbers(new int[] {1,2,3,4,5,6,7,8,9,10,0}, 10);
+          
+           Console.WriteLine(ts.LongestRepeatingLength());
+           Console.ReadLine();
 
-        //}
+        }
     }
 
     public class TwoSum
@@ -522,6 +523,23 @@ namespace LeetCode
                 }
             }
             return counter;
+        }
+
+        public int LongestRepeatingLength(){
+        int[] nums = new int[]{0,1,1,0,1,1,0,1,1,1,1};
+        int max=0;
+        int temp =0;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if(nums[i] == 1){
+                temp++;
+                max = Math.Max(max,temp);
+            }
+            else{
+                temp = 0;
+            }
+        }
+        return max;
         }
         ///*Hello*/
         //public static PascalTriangle(int a)

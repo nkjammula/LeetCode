@@ -7,30 +7,38 @@ namespace LeetCode
 {
     class StackPrac
     {
-        public static void Main(String[] args)
-        {
-            //Stack st = new Stack();
-            //st.Push(1);
-            //st.Push(5);
-            //st.Push(10);
+//         public static void Main(String[] args)
+//         {
+//             //Stack st = new Stack();
+//             //st.Push(1);
+//             //st.Push(5);
+//             //st.Push(10);
 
-            //Console.WriteLine("Peek:" + st.Peek());
+//             //Console.WriteLine("Peek:" + st.Peek());
 
-            //Console.WriteLine("Pop:" + st.Pop());
+//             //Console.WriteLine("Pop:" + st.Pop());
 
-            //foreach (var item in st)
-            //{
-            //    Console.WriteLine(item);
-            //}
+//             //foreach (var item in st)
+//             //{
+//             //    Console.WriteLine(item);
+//             //}
 
-            StackPrac sp = new StackPrac();
-            //sp.DailyTemperatures(new int[] { 73, 74, 75, 71, 69, 72, 76, 73 });
-            //sp.EvalRPN(new string[] { "2", "1", "+", "3", "*" });
-
-            sp.decodeString("325[a]2[bc]");
-
-            Console.ReadLine();
-        }
+//             StackPrac sp = new StackPrac();
+//             //sp.DailyTemperatures(new int[] { 73, 74, 75, 71, 69, 72, 76, 73 });
+//             //sp.EvalRPN(new string[] { "2", "1", "+", "3", "*" });
+//             sp.updateMatrix(new int[][]{
+//               new int[]{0,0,0}
+//             , new int[]{0,1,0}
+//             , new int[] {0,0,0}
+//             });
+//             //Console.WriteLine(sp.decodeString("325[a]2[bc]"));
+//    Console.WriteLine( sp.updateMatrix(new int[][]{
+//               new int[]{0,0,0}
+//             , new int[]{0,1,0}
+//             , new int[] {0,0,0}
+//             }));
+//             Console.ReadLine();
+//         }
 
 
 
@@ -185,6 +193,28 @@ namespace LeetCode
             }
             return res;
         }
+
+        // Stack<TreeNode> stack = new Stack<TreeNode>();
+        // List<int> output = new List<int>();
+        
+        // if(root == null){
+        //     return output;
+        // }
+        
+        // stack.Push(root);
+        
+        // while(stack.Count > 0){
+        //     TreeNode node = stack.Pop();
+        //     output.Add(node.val);
+        //     if(node.right != null){
+        //         stack.Push(node.right);
+        //     }
+            
+        //     if(node.left !=null){
+        //         stack.Push(node.left);
+        //     }
+        // }
+        //     return output;
         //     public void DFS(char[][] grid, int r, int c){
         //         int rc = grid.Length;
         //         int cc = grid[0].Length;
@@ -214,6 +244,37 @@ namespace LeetCode
         //         }
         //         return islands;
         //     }
-
+public int[][] updateMatrix(int[][] matrix) {
+        int m = matrix.Length;
+        int n = matrix[0].Length;
+        
+       Queue queue = new Queue();
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (matrix[i][j] == 0) {
+                    queue.Enqueue(new int[] {i, j});
+                }
+                else {
+                    matrix[i][j] = int.MaxValue;
+                }
+            }
+        }
+        
+        int[][] dirs = new int[][]{new int[]{0,1}, new int[]{0,-1}, new int[] {1,0}, new int[] {-1,0}};
+        
+        while (queue.Count !=0) {
+            int[] cell = (int[])queue.Dequeue();
+            foreach (var d in dirs) {
+                int r = cell[0] + d[0];
+                int c = cell[1] + d[1];
+                if (r < 0 || r >= m || c < 0 || c >= n || 
+                    matrix[r][c] <= matrix[cell[0]][cell[1]] + 1) continue;
+                queue.Enqueue(new int[] {r, c});
+                matrix[r][c] = matrix[cell[0]][cell[1]] + 1;
+            }
+        }
+        
+        return matrix;
+    }
     }
 }
